@@ -1,33 +1,6 @@
 // Dados das cidades por estado
 const cidadesPorEstado = {
-    'AC': ['Rio Branco', 'Cruzeiro do Sul', 'Sena Madureira', 'Tarauacá', 'Feijó'],
-    'AL': ['Maceió', 'Arapiraca', 'Palmeira dos Índios', 'Rio Largo', 'Penedo'],
-    'AP': ['Macapá', 'Santana', 'Laranjal do Jari', 'Oiapoque', 'Mazagão'],
-    'AM': ['Manaus', 'Parintins', 'Itacoatiara', 'Manacapuru', 'Coari'],
-    'BA': ['Salvador', 'Feira de Santana', 'Vitória da Conquista', 'Camaçari', 'Juazeiro', 'Ilhéus', 'Barreiras'],
-    'CE': ['Fortaleza', 'Caucaia', 'Juazeiro do Norte', 'Maracanaú', 'Sobral'],
-    'DF': ['Brasília', 'Gama', 'Taguatinga', 'Ceilândia', 'Sobradinho'],
-    'ES': ['Vitória', 'Vila Velha', 'Serra', 'Cariacica', 'Cachoeiro de Itapemirim'],
-    'GO': ['Goiânia', 'Aparecida de Goiânia', 'Anápolis', 'Rio Verde', 'Luziânia'],
-    'MA': ['São Luís', 'Imperatriz', 'São José de Ribamar', 'Timon', 'Caxias'],
-    'MT': ['Cuiabá', 'Várzea Grande', 'Rondonópolis', 'Sinop', 'Tangará da Serra'],
-    'MS': ['Campo Grande', 'Dourados', 'Três Lagoas', 'Corumbá', 'Ponta Porã'],
-    'MG': ['Belo Horizonte', 'Uberlândia', 'Contagem', 'Juiz de Fora', 'Betim', 'Montes Claros', 'Ribeirão das Neves'],
-    'PA': ['Belém', 'Ananindeua', 'Santarém', 'Marabá', 'Parauapebas'],
-    'PB': ['João Pessoa', 'Campina Grande', 'Santa Rita', 'Patos', 'Bayeux'],
-    'PR': ['Curitiba', 'Londrina', 'Maringá', 'Ponta Grossa', 'Cascavel', 'São José dos Pinhais', 'Foz do Iguaçu'],
-    'PE': ['Recife', 'Jaboatão dos Guararapes', 'Olinda', 'Caruaru', 'Petrolina'],
-    'PI': ['Teresina', 'Parnaíba', 'Picos', 'Piripiri', 'Floriano'],
-    'RJ': ['Rio de Janeiro', 'São Gonçalo', 'Duque de Caxias', 'Nova Iguaçu', 'Niterói', 'Campos dos Goytacazes', 'Belford Roxo'],
-    'RN': ['Natal', 'Mossoró', 'Parnamirim', 'São Gonçalo do Amarante', 'Macaíba'],
-    'RS': ['Porto Alegre', 'Caxias do Sul', 'Pelotas', 'Canoas', 'Santa Maria'],
-    'RO': ['Porto Velho', 'Ji-Paraná', 'Ariquemes', 'Vilhena', 'Cacoal'],
-    'RR': ['Boa Vista', 'Rorainópolis', 'Caracaraí', 'Alto Alegre', 'Mucajaí'],
-    'SC': ['Florianópolis', 'Joinville', 'Blumenau', 'São José', 'Criciúma', 'Chapecó'],
-    'SP': ['São Paulo', 'Guarulhos', 'Campinas', 'São Bernardo do Campo', 'Santo André', 'Osasco', 'Ribeirão Preto'],
-    'SE': ['Aracaju', 'Nossa Senhora do Socorro', 'Lagarto', 'Itabaiana', 'Estância'],
-    'TO': ['Palmas', 'Araguaína', 'Gurupi', 'Porto Nacional', 'Paraíso do Tocantins'],
-    'SOL': ['Nova Aurora', 'Serra Verde', 'Porto Esperança', 'Vila da Liberdade', 'Santa Luzia do Vale']
+    'PE': ['Recife', 'Jaboatão dos Guararapes', 'Olinda', 'Caruaru', 'Petrolina', 'Paulista', 'Cabo de Santo Agostinho', 'Camaragibe', 'Garanhuns', 'Vitória de Santo Antão', 'Igarassu', 'São Lourenço da Mata', 'Ipojuca', 'Santa Cruz do Capibaribe', 'Abreu e Lima', 'Serra Talhada', 'Gravatá', 'Araripina', 'Goiana', 'Belo Jardim', 'Carpina', 'Arcoverde', 'Ouricuri', 'Surubim', 'Salgueiro', 'Pesqueira', 'Bezerros', 'Escada', 'Paudalho', 'Limoeiro', 'Moreno', 'Palmares', 'Buíque', 'São Bento do Una', 'Brejo da Madre de Deus', 'Timbaúba', 'Bom Conselho', 'Águas Belas', 'Toritama', 'Santa Maria da Boa Vista', 'Afogados da Ingazeira', 'Barreiros', 'Lajedo', 'Custódia', 'Bom Jardim', 'Sirinhaém', 'Bonito', 'São Caitano', 'Aliança', 'São José do Belmonte', 'Itambé', 'Bodocó', 'Petrolândia', 'Sertânia', 'Ribeirão', 'Itaíba', 'Exu', 'Catende', 'São José do Egito', 'Nazaré da Mata', 'Trindade', 'Cabrobó', 'Floresta', 'Ipubi', 'Caetés', 'Glória do Goitá', 'Passira', 'Itapissuma', 'Tabira', 'João Alfredo', 'Ibimirim', 'Inajá', 'Vicência', 'Água Preta', 'Tupanatinga', 'Pombos', 'Manari', 'Ilha de Itamaracá', 'Taquaritinga do Norte', 'Condado', 'Canhotinho', 'Lagoa Grande', 'Tacaratu', 'São João', 'Macaparana', 'Agrestina', 'Tamandaré', 'Cupira', 'Pedra', 'Panelas', 'Vertentes', 'Orobó', 'Feira Nova', 'Riacho das Almas', 'Chã Grande', 'Altinho', 'Flores', 'Cachoeirinha', 'Rio Formoso', 'São Joaquim do Monte', 'Araçoiaba', 'Lagoa de Itaenga', 'Carnaíba', 'São José da Coroa Grande', 'Afrânio', 'Parnamirim', 'Sanharó', 'Capoeiras', 'Serrita', 'Belém do São Francisco', 'Lagoa do Carro', 'Amaraji', 'Camocim de São Félix', 'Quipapá', 'Gameleira', 'Dormentes', 'Correntes', 'Venturosa', 'Iati', 'São Vicente Ferrer', 'Itaquitinga', 'Jataúba', 'Cumaru', 'Jupi', 'Ferreiros', 'Triunfo', 'Mirandiba', 'Santa Maria do Cambucá', 'Jatobá', 'Tracunhaém', 'Lagoa dos Gatos', 'Alagoinha', 'Primavera', 'Santa Cruz', 'Tacaimbó', 'Itapetim', 'Saloá', 'Orocó', 'Frei Miguelinho', 'Jurema', 'Joaquim Nabuco', 'Casinhas', 'São Benedito do Sul', 'Chã de Alegria', 'Buenos Aires', 'Paranatama', 'Carnaubeira da Penha', 'Barra de Guabiraba', 'Santa Filomena', 'Lagoa do Ouro', 'Betânia', 'Jucati', 'Santa Cruz da Baixa Verde', 'Xexéu', 'Machados', 'Calçado', 'Iguaracy', 'Sairé', 'Moreilândia', 'Cedro', 'Belém de Maria', 'Poção', 'Angelim', 'Santa Terezinha', 'Cortês', 'Jaqueira', 'Verdejante', 'Maraial', 'Brejão', 'Terra Nova', 'Tuparetama', 'Brejinho', 'Camutanga', 'Vertente do Lério', 'Ibirajuba', 'Granito', 'Palmeirina', 'Terezinha', 'Quixaba', 'Salgadinho', 'Solidão', 'Calumbi', 'Ingazeira', 'Itacuruba', 'Fernando de Noronha']
 };
 
 // Variáveis globais para o captcha
@@ -38,65 +11,52 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCaptcha();
     setupEventListeners();
     setupFormValidation();
+    fetchUserIP(); // Nova função para obter e exibir o IP
 });
+
+// Variável global para armazenar o IP do usuário
+let userIP = "";
+
+// Função para obter o IP do usuário
+async function fetchUserIP() {
+    try {
+        const response = await fetch("https://api.ipify.org?format=json");
+        const data = await response.json();
+        userIP = data.ip;
+        document.getElementById("user-ip").textContent = userIP;
+    } catch (error) {
+        console.error("Erro ao obter o IP do usuário:", error);
+        document.getElementById("user-ip").textContent = "Não foi possível obter";
+    }
+}
 
 // Configurar captcha simples
 function initializeCaptcha() {
-    const num1 = Math.floor(Math.random() * 10) + 1;
-    const num2 = Math.floor(Math.random() * 10) + 1;
-    const operations = ['+', '-', '×'];
-    const operation = operations[Math.floor(Math.random() * operations.length)];
-    
-    let question, answer;
-    
-    switch(operation) {
-        case '+':
-            question = `${num1} + ${num2}`;
-            answer = num1 + num2;
-            break;
-        case '-':
-            // Garantir que o resultado seja positivo
-            const maior = Math.max(num1, num2);
-            const menor = Math.min(num1, num2);
-            question = `${maior} - ${menor}`;
-            answer = maior - menor;
-            break;
-        case '×':
-            const smallNum1 = Math.floor(Math.random() * 5) + 1;
-            const smallNum2 = Math.floor(Math.random() * 5) + 1;
-            question = `${smallNum1} × ${smallNum2}`;
-            answer = smallNum1 * smallNum2;
-            break;
-    }
-    
-    document.getElementById('captcha-question').textContent = question;
-    captchaAnswer = answer;
+    const words = ["rosa", "azul", "verde", "sol", "lua"];
+    const selectedWord = words[Math.floor(Math.random() * words.length)];
+    document.getElementById("captcha-question").textContent = `Digite a palavra '${selectedWord}'`;
+    captchaAnswer = selectedWord;
 }
 
 // Configurar event listeners
 function setupEventListeners() {
-    const estadoSelect = document.getElementById('estado');
-    const cidadeSelect = document.getElementById('cidade');
-    const form = document.getElementById('contactForm');
-    
-    // Atualizar cidades quando estado mudar
-    estadoSelect.addEventListener('change', function() {
-        updateCidades(this.value);
-    });
+    const cidadeSelect = document.getElementById("cidade");
+    const form = document.getElementById("contactForm");
     
     // Submissão do formulário
-    form.addEventListener('submit', handleFormSubmit);
+    form.addEventListener("submit", handleFormSubmit);
     
     // Reset do formulário
-    form.addEventListener('reset', function() {
+    form.addEventListener("reset", function() {
         setTimeout(() => {
             initializeCaptcha();
-            updateCidades('');
+            updateCidades("PE"); // Chamar com PE para carregar cidades de Pernambuco
         }, 100);
     });
     
     // Formatação automática dos campos de telefone
     setupPhoneFormatting();
+    updateCidades("PE"); // Carregar cidades de Pernambuco na inicialização
 }
 
 // Atualizar lista de cidades baseado no estado selecionado
@@ -203,10 +163,10 @@ function validateField(field) {
                 errorMessage = 'Digite um celular válido (ex: 9 1234-5678)';
             }
             break;
-        case 'number':
-            if (field.id === 'captcha' && value && parseInt(value) !== captchaAnswer) {
+        case 'text':
+            if (field.id === 'captcha' && value.toLowerCase() !== captchaAnswer.toLowerCase()) {
                 isValid = false;
-                errorMessage = 'Resposta incorreta';
+                errorMessage = 'Palavra incorreta';
             }
             break;
     }
@@ -269,11 +229,11 @@ async function handleFormSubmit(e) {
     });
     
     // Validar captcha
-    const captchaInput = document.getElementById('captcha');
-    if (parseInt(captchaInput.value) !== captchaAnswer) {
+    const captchaInput = document.getElementById("captcha");
+    if (captchaInput.value.toLowerCase() !== captchaAnswer.toLowerCase()) {
         isFormValid = false;
-        captchaInput.classList.add('error');
-        showErrorMessage(captchaInput, 'Resposta do captcha incorreta');
+        captchaInput.classList.add("error");
+        showErrorMessage(captchaInput, "Palavra incorreta");
     }
     
     if (!isFormValid) {
@@ -285,12 +245,13 @@ async function handleFormSubmit(e) {
     const data = {
         nome: formData.get('nome'),
         telefone: formData.get('telefone'),
-        celular: `(${formData.get('ddd')}) ${formData.get('celular')}`,
-        estado: formData.get('estado'),
-        cidade: formData.get('cidade'),
-        mensagem: formData.get('mensagem'),
+        celular: `(${formData.get("ddd")}) ${formData.get("celular")}`,
+        estado: "Pernambuco", // Estado fixo
+        cidade: formData.get("cidade"),
+        mensagem: formData.get("mensagem"),
         timestamp: new Date().toISOString(),
-        userAgent: navigator.userAgent
+        userAgent: navigator.userAgent,
+        userIP: userIP // Adiciona o IP do usuário
     };
     
     // Mostrar loading
@@ -384,12 +345,13 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Função para demonstração (remover em produção)
+    // Função para demonstração (remover em produção)
 function demonstrateWebhook() {
-    console.log('Para usar este formulário em produção:');
-    console.log('1. Crie um cenário no Make/Integromat');
-    console.log('2. Configure um webhook como trigger');
-    console.log('3. Substitua a URL do webhook na linha 234 do script.js');
-    console.log('4. Configure as ações desejadas (email, planilha, etc.)');
+    console.log("Para usar este formulário em produção:");
+    console.log("1. Crie um cenário no Make/Integromat");
+    console.log("2. Configure um webhook como trigger");
+    console.log("3. Substitua a URL do webhook na linha 234 do script.js");
+    console.log("4. Configure as ações desejadas (email, planilha, etc.)");
 }
 
+// Fim do script
