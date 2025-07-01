@@ -253,7 +253,12 @@ textarea {
     padding: 30px;
     text-align: center;
     border-radius: 12px;
-    margin: 20px;
+    margin: 20px auto;
+    position: sticky;
+    top: 20px; /* Ajuste conforme necessário para não sobrepor o header */
+    z-index: 1000;
+    width: calc(100% - 40px); /* Para compensar o margin */
+    max-width: 760px; /* Mesma largura do container - padding */
 }
 
 .message h3 {
@@ -349,6 +354,11 @@ textarea {
     .footer {
         padding: 20px;
     }
+
+    .message {
+        margin: 10px auto; /* Ajuste para telas menores */
+        width: calc(100% - 20px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -406,4 +416,6 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
         display: none;
     }
 }
+
+
 
