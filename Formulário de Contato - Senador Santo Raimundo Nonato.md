@@ -1,6 +1,6 @@
-# Formulário de Contato - Senador Santo Raimundo Nonato
+# Formulário de Contato - Guimarães Rosa
 
-Este é um formulário de contato responsivo e moderno para o Senador Santo Raimundo Nonato do Estado do Sol Nascente.
+Este é um formulário de contato responsivo e moderno para Guimarães Rosa do Estado do Sol Nascente.
 
 ## Características
 
