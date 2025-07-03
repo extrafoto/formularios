@@ -20,7 +20,7 @@ let userIP = "";
 // Função para obter o IP do usuário
 async function fetchUserIP() {
     try {
-        const response = await fetch("https://api.ipify.org?format=json");
+        const response = await fetch("https://api.ipify.org?format=json" );
         const data = await response.json();
         userIP = data.ip;
         document.getElementById("user-ip").textContent = userIP;
@@ -67,7 +67,8 @@ function updateCidades(estado) {
     cidadeSelect.innerHTML = '<option value="">Selecione a Cidade</option>';
     
     if (estado && cidadesPorEstado[estado]) {
-        cidadesPorEstado[estado].forEach(cidade => {
+        const sortedCidades = cidadesPorEstado[estado].sort();
+        sortedCidades.forEach(cidade => {
             const option = document.createElement('option');
             option.value = cidade;
             option.textContent = cidade;
@@ -181,7 +182,7 @@ function validateField(field) {
 
 // Validar email
 function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[\S+@\S+\.\S+]$/;
     return emailRegex.test(email);
 }
 
@@ -266,14 +267,14 @@ async function handleFormSubmit(e) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data )
         });
         
         if (response.ok) {
             showMessage('Mensagem enviada com sucesso!', 'success');
             form.reset();
             initializeCaptcha();
-            updateCidades('');
+            updateCidades('PE'); // Chamar com PE para carregar cidades de Pernambuco
         } else {
             throw new Error('Erro na resposta do servidor');
         }
