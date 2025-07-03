@@ -242,17 +242,17 @@ async function handleFormSubmit(e) {
         return;
     }
     
-    // Preparar dados para envio
+      // Preparar dados para envio
     const data = {
-        nome: formData.get('nome'),
-        telefone: formData.get('telefone'),
+        nome: formData.get("nome"),
+        telefone: formData.get("telefone"),
         celular: `(${formData.get("ddd")}) ${formData.get("celular")}`,
         estado: "Pernambuco", // Estado fixo
         cidade: formData.get("cidade"),
         mensagem: formData.get("mensagem"),
         timestamp: new Date().toISOString(),
         userAgent: navigator.userAgent,
-        userIP: userIP // Adiciona o IP do usuário
+        userIP: userIP // <--- AQUI! O IP é adicionado aos dados
     };
     
     // Mostrar loading
